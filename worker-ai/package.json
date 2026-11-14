@@ -1,0 +1,15 @@
+{
+  "name": "der3-ai-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.2"
+  }
+}

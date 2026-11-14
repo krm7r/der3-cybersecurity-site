@@ -1,0 +1,39 @@
+<div class="page-heading">
+  <div class="page-heading-copy">
+    <p class="eyebrow" data-i18n="tools"></p>
+    <h1 data-i18n="breach"></h1>
+    <p data-i18n="breachDesc"></p>
+  </div>
+</div>
+<div class="tool-layout">
+  <section class="panel tool-main">
+    <div class="tool-intro-icon" data-icon="shield"></div>
+    <h2 data-i18n="breachTitle"></h2>
+    <p data-i18n="breachExplain"></p>
+    <form id="breach-form" class="form-stack" autocomplete="off">
+      <div class="field">
+        <label for="breach-password" data-i18n="breachInput"></label>
+        <input id="breach-password" name="check-value" type="password" autocomplete="off" spellcheck="false" required maxlength="1024" data-i18n-placeholder="breachPlaceholder">
+        <span class="field-help" data-i18n="breachPrivacy"></span>
+      </div>
+      <div class="form-row">
+        <button class="button button-primary" type="submit" data-i18n="breachButton"></button>
+      </div>
+    </form>
+    <div id="breach-result" role="status" aria-live="polite" aria-atomic="true"></div>
+  </section>
+  <aside class="tool-aside">
+    <section class="panel aside-card">
+      <h3 data-i18n="breach"></h3>
+      <ul class="aside-list">
+        <li><span class="list-check">✓</span><span data-i18n="breachSteps"></span></li>
+        <li><span class="list-check">✓</span><span data-i18n="breachSteps2"></span></li>
+        <li><span class="list-check">✓</span><span data-i18n="breachSteps3"></span></li>
+      </ul>
+    </section>
+    <div class="status-banner">
+      <span class="banner-icon">i</span>
+      <div><strong data-i18n="breachProviderNote"></strong> <a href="https://haveibeenpwned.com/Passwords" target="_blank" rel="noopener noreferrer" data-i18n="breachProvider"></a></div>
+    </div>
+  </aside>
+</div>

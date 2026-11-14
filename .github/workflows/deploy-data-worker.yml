@@ -1,0 +1,28 @@
+name: Deploy data worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "worker-data/**"
+      - ".github/workflows/deploy-data-worker.yml"
+
+concurrency:
+  group: deploy-data-worker
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Deploy der3-data-api
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: b50245539bfc8ea4399123b54d5da2d6
+          workingDirectory: worker-data
+          command: deploy index.js

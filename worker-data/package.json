@@ -1,0 +1,14 @@
+{
+  "name": "der3-data-api-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.2"
+  }
+}

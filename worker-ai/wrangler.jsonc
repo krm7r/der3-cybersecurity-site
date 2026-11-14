@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "der3-ai",
+  "main": "index.js",
+  "compatibility_date": "2026-10-19",
+  "workers_dev": true,
+  "ai": {
+    "binding": "AI"
+  },
+  "ratelimits": [
+    {
+      "name": "AI_LIMITER",
+      "namespace_id": "730101",
+      "simple": {
+        "limit": 1,
+        "period": 10
+      }
+    }
+  ]
+}

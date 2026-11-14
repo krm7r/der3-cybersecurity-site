@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "der3-security-analysis",
+  "main": "index.js",
+  "compatibility_date": "2026-10-19",
+  "workers_dev": true,
+  "vars": {
+    "CLOUDFLARE_ACCOUNT_ID": "c1d93f57cae70d680a28ceccbc88f638"
+  },
+  "ratelimits": [
+    {
+      "name": "URL_SCAN_LIMITER",
+      "namespace_id": "73612941",
+      "simple": {
+        "limit": 1,
+        "period": 10
+      }
+    }
+  ]
+}

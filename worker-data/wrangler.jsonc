@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "der3-data-api",
+  "main": "index.js",
+  "compatibility_date": "2026-10-19",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "der3-data",
+      "database_id": "b9c69842-0fbd-4eeb-adba-38ca49cdeaae"
+    }
+  ]
+}
